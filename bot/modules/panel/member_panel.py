@@ -11,7 +11,7 @@ import math
 import random
 from datetime import timedelta, datetime
 from bot.schemas import ExDate, Yulv
-from bot import bot, LOGGER, _open, emby_line, sakura_b, ranks, group, extra_emby_libs, config, bot_name, schedall
+from bot import bot, LOGGER, _open, emby_line, whitelist_line, sakura_b, ranks, group, extra_emby_libs, config, bot_name, schedall
 from pyrogram import filters
 from bot.func_helper.emby import emby
 from bot.func_helper.filters import user_in_group_on_filter
