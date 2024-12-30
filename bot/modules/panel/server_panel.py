@@ -38,9 +38,9 @@ async def server(_, call):
 
     pwd = '空' if not data.pwd else data.pwd
 
-    # 读取 config.json
+    # 读取 config.json 使用绝对路径 "/app/config.json"
     try:
-      with open("config.json", "r", encoding="utf-8") as f:
+      with open("/app/config.json", "r", encoding="utf-8") as f:
         config_data = json.load(f)
     except Exception as e:
         print(f"读取配置文件错误: {e}")
