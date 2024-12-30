@@ -42,6 +42,7 @@ async def server(_, call):
     try:
       with open("/app/config.json", "r", encoding="utf-8") as f:
         config_data = json.load(f)
+      print(f"读取到的配置文件: {config_data}") # 添加这一行，打印配置信息
     except Exception as e:
         print(f"读取配置文件错误: {e}")
         return await editMessage(call, "⚠️ 读取配置文件错误")
