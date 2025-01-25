@@ -59,7 +59,7 @@ kk_gift_days = config.kk_gift_days
 fuxx_pitao = config.fuxx_pitao
 red_envelope = config.red_envelope
 
-mp = config.moviepilot
+moviepilot = config.moviepilot
 auto_update = config.auto_update
 api = config.api
 save_config()
@@ -91,6 +91,7 @@ admin_p = user_p + [
     BotCommand("unban_channel", "解封皮套人 [管理]"),
     BotCommand("syncgroupm", "消灭不在群的人 [管理]"),
     BotCommand("syncunbound", "消灭未绑定bot的emby账户 [管理]"),
+    BotCommand("scan_embyname", "扫描同名的用户记录 [管理]"),
     BotCommand("low_activity", "手动运行活跃检测 [管理]"),
     BotCommand("check_ex", "手动到期检测 [管理]"),
     BotCommand("uranks", "召唤观影时长榜，失效时用 [管理]"),
@@ -101,6 +102,8 @@ admin_p = user_p + [
     BotCommand("ucr", "私聊创建非tg的emby用户 [管理]"),
     BotCommand("uinfo", "查询指定用户名 [管理]"),
     BotCommand("urm", "删除指定用户名 [管理]"),
+    BotCommand("only_rm_emby", "删除指定的Emby账号 [管理]"),
+    BotCommand("only_rm_record", "删除指定的tgid数据库记录 [管理]"),
     BotCommand("restart", "重启bot [管理]"),
     BotCommand("update_bot", "更新bot [管理]"),
 ]
